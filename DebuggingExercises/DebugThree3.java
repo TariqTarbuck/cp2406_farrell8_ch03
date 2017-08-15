@@ -4,7 +4,7 @@ public class DebugThree3
 {
    public static void main(String args[])
    {
-      String name;
+      String name = new String();
       getName();
       displayGreeting(name);           
    }
@@ -12,11 +12,11 @@ public class DebugThree3
    {
       String name;
       Scanner input = new Scanner(System.in);
-      System.out.print(Enter name );
-      name = input.nextInt();
+      System.out.print("Enter name ");
+      name = input.next();
       return name;
    }
-   public static void displayGreeting()
+   public static void displayGreeting(String name)
    {
       System.out.println("Hello, " + name + "!");
    }
